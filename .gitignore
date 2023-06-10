@@ -1,0 +1,23 @@
+# Created by https://www.toptal.com/developers/gitignore/api/composer,codeigniter,dotenv
+# Edit at https://www.toptal.com/developers/gitignore?templates=composer,codeigniter,dotenv
+
+#codeigniter 3
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+/vendor/
+
+### CodeIgniter Patch ###
+
+### Composer ###
+composer.phar
+vendor
+
+# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+# composer.lock
+
+### dotenv ###
+.env
+
+# End of https://www.toptal.com/developers/gitignore/api/composer,codeigniter,dotenv
