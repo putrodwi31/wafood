@@ -1,3 +1,5 @@
+1. Jalankan composer install, untuk menginstall requirement composer
+
 Masuk Admin
 Nama Pengguna   : admin
 Kata Sandi      : admin123
