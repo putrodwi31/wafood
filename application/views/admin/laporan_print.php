@@ -93,6 +93,11 @@
             </tbody>
 
         </table>
+        <p style="text-align: right; font-size: medium; align-items: flex-end; "><b>Bekasi, <?= date('d F Y'); ?></b></p>
+        <p style="padding: 0; margin-top: -15px;  font-weight: bold; text-align: right; font-size: medium;">Pembuat</p>
+        <p style="padding: 0; margin-top: 80px;  font-weight: bold; text-align: right; font-size: medium;"><?= $_SESSION['username']; ?></p>
+
+
     </div>
 </body>
 

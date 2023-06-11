@@ -318,7 +318,7 @@ $(document).ready(function () {
           backgroundColor: "#be4f4f",
         }).showToast()
         $("#nama_menu").focus()
-      } else if (tunai < 1) {
+      } else if (parseInt(tunai) < 1) {
         Toastify({
           text: "Jumlah uang tunai belum diinput!",
           duration: 3000,
@@ -328,7 +328,7 @@ $(document).ready(function () {
           backgroundColor: "#be4f4f",
         }).showToast()
         $("#tunai").focus()
-      } else if (tunai < total_harga) {
+      } else if (parseInt(tunai) < parseInt(total_harga)) {
         Toastify({
           text: "Jumlah uang tunai tidak cukup!",
           duration: 3000,
