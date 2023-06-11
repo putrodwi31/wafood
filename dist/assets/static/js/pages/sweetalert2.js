@@ -142,6 +142,9 @@ $(document).ready(function () {
                   position: "right",
                   backgroundColor: "#be4f4f",
                 }).showToast()
+                setTimeout(function () {
+                  location.reload();
+                }, 2000);
               } else {
                 alert('Gagal menambahkan ke db!');
               }
