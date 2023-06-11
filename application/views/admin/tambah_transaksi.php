@@ -64,7 +64,7 @@
                                         <input type="hidden" id="id_menu">
                                         <input type="hidden" id="harga">
                                         <input type="hidden" id="stok">
-                                        <input type="text" class="form-control" id="nama_menu" name="nama_menu" required autofocus autocomplete="off">
+                                        <input type="text" class="form-control" id="nama_menu" name="nama_menu" required autofocus autocomplete="off" readonly>
                                         <div class="input-group-append">
 
                                             <!-- <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modal_item"><i class="fa fa-search"></i></button> -->

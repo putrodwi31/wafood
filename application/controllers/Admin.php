@@ -15,6 +15,8 @@ class Admin extends CI_Controller
 		$data['minuman'] = $this->db->query("SELECT SUM(terjual) as mintot FROM menu WHERE id_kategori='2'")->row();
 		$data['pendapatan'] = $this->db->query("SELECT SUM(total_harga) as sumtot FROM transaksi WHERE status='1'")->row();
 		$data['kategori'] = $this->db->get('kategori')->num_rows();
+		$data['menufav'] = $this->db->query("SELECT nama_menu, terjual FROM menu WHERE terjual > 0 ORDER BY terjual DESC LIMIT 10")->result();
+		$data['transaksi'] = $this->db->query("SELECT no_transaksi, nama_pembeli, status, total_harga FROM transaksi ORDER BY no_transaksi DESC LIMIT 4")->result();
 
 		$this->load->view("templates/header", $data);
 		$this->load->view("templates/sidebar", $data);
@@ -463,7 +465,6 @@ class Admin extends CI_Controller
 			}
 			echo json_encode($params);
 		}
-		// jika proses_pembayaran di tekan
 		if (isset($_POST['proses_pembayaran'])) {
 			$no_transaksi = $this->input->post('no_transaksi', true);
 			$tanggal = $this->input->post('tanggal', true);
